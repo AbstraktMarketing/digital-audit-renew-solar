@@ -228,8 +228,9 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
 
 .header-tree { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; line-height: 2; }
 .header-tree .tag { font-weight: 600; }
-.header-tree .h1 { color: var(--maroon); }
-.header-tree .h2 { color: var(--blue); }
+.header-tree .h1 { color: var(--charcoal); }
+.header-tree .h2 { color: var(--charcoal); }
+.header-tree .hit { color: var(--green); font-style: italic; font-weight: 600; }
 .header-tree .h4 { color: var(--muted); }
 .header-tree .miss { color: var(--red); font-style: italic; font-weight: 600; }
 .header-tree .indent { padding-left: 1.5rem; }
@@ -403,7 +404,7 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
         </div>
         <div style="padding:0.65rem 0.85rem;background:var(--red-light);border-radius:6px;border-left:3px solid var(--red)">
           <div style="font-size:0.55rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.3rem">Critical</div>
-          <div style="font-size:0.79rem;color:var(--text);line-height:1.45">Only <strong>2 of ~25 directory listings</strong> are correct &mdash; others show a Texas business and a San&nbsp;Antonio phone under ReNew&rsquo;s name</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.45"><strong>3 different phone numbers</strong> appear across its local listings &mdash; and 12 directories don&rsquo;t list ReNew at all</div>
         </div>
         <div style="padding:0.65rem 0.85rem;background:var(--amber-light);border-radius:6px;border-left:3px solid var(--amber)">
           <div style="font-size:0.55rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.3rem">High</div>
@@ -638,7 +639,7 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
           <div>
             <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Local SEO</div>
-            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">Only 2 of ~25 listings correct</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">12 missing &middot; 9 inconsistent listings</div>
           </div>
           <div style="font-size:1.6rem;font-weight:800;color:var(--red)">24<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
         </div>
@@ -865,14 +866,17 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
         <div><span class="tag">&lt;H1&gt;</span> <span class="h1">Why Go Solar?</span></div>
         <div class="indent miss">⚠ Two H1 tags on one page &mdash; dilutes the page&rsquo;s topic signal</div>
         <div class="indent"><span class="tag">&lt;H3&gt;</span> <span class="h2">Tennessee&rsquo;s Most Trusted Solar Solutions Provider</span></div>
-        <div class="indent miss">⚠ The real positioning line is an H3, not the H1</div>
+        <div class="indent hit">&check; Good positioning line &mdash; clear and on-message</div>
+        <div class="indent miss">⚠ but it&rsquo;s in an H3, not the H1</div>
 
         <span class="page-label">Commercial Solar (/services/commercial-solar/)</span>
-        <div class="indent miss">⚠ Page exists but ranks for 0 commercial-solar keywords</div>
+        <div class="indent hit">&check; Commercial page already exists &mdash; the foundation is there</div>
+        <div class="indent miss">⚠ but it ranks for 0 commercial-solar keywords</div>
         <div class="indent miss">⚠ No city-level commercial pages (Nashville, Knoxville, Chattanooga)</div>
 
         <span class="page-label">Residential Solar (/services/residential-solar/)</span>
-        <div class="indent miss">⚠ Carries nearly all organic visibility &mdash; the opposite of the stated goal</div>
+        <div class="indent hit">&check; Ranks well and drives most of the site&rsquo;s organic traffic &mdash; proof the domain can rank</div>
+        <div class="indent miss">⚠ but it&rsquo;s all residential, the opposite of the stated commercial goal</div>
       </div>
       <!-- /EDIT -->
     </div>
@@ -939,15 +943,15 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
       <!-- NAP: tokenize the 5 fields. Conflict box is EDIT (remove if no NAP conflict). -->
       <div class="card-label"><span class="dot red"></span> NAP Audit</div>
       <div style="font-size:0.82rem;line-height:1.8">
-        <div><strong>Name:</strong> Renew Solar of Tennessee LLC</div>
-        <div><strong>Address:</strong> 10521 Research Dr #100</div>
-        <div><strong>City:</strong> Knoxville, TN 37932</div>
-        <div><strong>Phone:</strong> (210) 245-6600 ⚠</div>
+        <div><strong>Name:</strong> ReNew Solar Solutions</div>
+        <div><strong>Address:</strong> 230 Great Circle Rd, Ste 232</div>
+        <div><strong>City:</strong> Nashville, TN 37228</div>
+        <div><strong>Phone:</strong> 615-617-6470 ⚠</div>
         <div><strong>URL:</strong> renewsolarsolutions.com</div>
       </div>
       <!-- EDIT -->
       <div style="margin-top:0.75rem;background:var(--red-light);border-radius:6px;padding:0.5rem;font-size:0.75rem;color:var(--red)">
-        <strong>Conflicts:</strong> Citation phone is <strong>(210) 245-6600</strong> (a San&nbsp;Antonio, TX area code) &mdash; the site lists 615-617-6470. EZlocal shows &ldquo;Texas Solar Integrated&rdquo;; Opendi shows &ldquo;Beverly Hills Rejuvenation Center.&rdquo;
+        <strong>Conflicts:</strong> Three different phone numbers appear across directories &mdash; <strong>615-617-6470</strong> (Cylex, n49, YP.com), <strong>615-857-3008</strong> (HotFrog, iGlobal) and <strong>931-616-3946</strong> (Where To?). Address format also varies (Suite / Ste / #232).
       </div>
       <!-- /EDIT -->
     </div>
@@ -965,11 +969,11 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
       <!-- EDIT -->
       <div class="card-label"><span class="dot red"></span> Online Presence</div>
       <div class="big-stat sm danger">POOR</div>
-      <div class="stat-sub">2 of ~25 directories correct</div>
+      <div class="stat-sub">0 of 25 directories fully consistent</div>
       <div style="margin-top:0.75rem">
-        <div style="font-size:0.78rem;color:var(--text)">Correct: <strong style="color:var(--green)">Where To?, Cylex &check;</strong></div>
-        <div style="font-size:0.78rem;color:var(--text)">Wrong business: <strong style="color:var(--amber)">EZlocal, ShowMeLocal, YP.com, Opendi</strong></div>
-        <div style="font-size:0.78rem;color:var(--text)">Missing: <strong style="color:var(--red)">Facebook, Bing, MapQuest, Apple, TripAdvisor + 12 more</strong></div>
+        <div style="font-size:0.78rem;color:var(--text)">Name correct: <strong style="color:var(--green)">all 9 live listings &check;</strong></div>
+        <div style="font-size:0.78rem;color:var(--text)">Inconsistent: <strong style="color:var(--amber)">9 listings &mdash; 3 phone numbers</strong></div>
+        <div style="font-size:0.78rem;color:var(--text)">Missing: <strong style="color:var(--red)">Bing, EZlocal, TripAdvisor + 9 more</strong></div>
       </div>
       <!-- /EDIT -->
     </div>
@@ -978,10 +982,10 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
       <div class="card-label"><span class="dot amber"></span> Key Listing Status</div>
       <div style="font-size:0.82rem;line-height:2">
         <div style="display:flex;justify-content:space-between"><span>Google Business Profile</span><span class="badge amber">Not Verified</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Facebook</span><span class="badge amber">Inconsistent</span></div>
         <div style="display:flex;justify-content:space-between"><span>Bing Places</span><span class="badge red">Not Present</span></div>
-        <div style="display:flex;justify-content:space-between"><span>Apple Maps</span><span class="badge amber">Unavailable</span></div>
-        <div style="display:flex;justify-content:space-between"><span>Facebook</span><span class="badge red">Not Present</span></div>
-        <div style="display:flex;justify-content:space-between"><span>EZlocal / Opendi</span><span class="badge red">Wrong Business</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Apple / MapQuest</span><span class="badge amber">Unreachable</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Phone Number</span><span class="badge red">3 Conflicting</span></div>
       </div>
       <!-- /EDIT -->
     </div>
@@ -991,7 +995,7 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
     <!-- EDIT -->
     <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.75rem">The Local SEO Problem, in One Paragraph</div>
     <p style="font-size:1rem;color:var(--white);line-height:1.7">
-      ReNew already wins the local searches that matter most &mdash; #1 for its brand, and in the local pack for &ldquo;solar companies tennessee.&rdquo; That makes the citation problem even costlier, because the foundation is strong and the leaks are fixable. The Semrush scan found <strong style="color:rgba(255,200,100,1)">only 2 of roughly 25 directories listing ReNew correctly.</strong> Several show the wrong company entirely &mdash; &ldquo;Texas Solar Integrated,&rdquo; &ldquo;Solar Integrated LLC,&rdquo; even a med-spa called &ldquo;Beverly Hills Rejuvenation Center&rdquo; &mdash; and the phone on file is a San&nbsp;Antonio, Texas line that doesn&rsquo;t match the 615 number on ReNew&rsquo;s own site. To Google, inconsistent name-address-phone data is a trust problem: it suppresses local-pack rankings for exactly the commercial searches ReNew wants to win across Nashville, Knoxville and the priority counties.
+      ReNew already wins the local searches that matter most &mdash; #1 for its brand, and in the local pack for &ldquo;solar companies tennessee.&rdquo; That makes the citation gaps costlier, because the foundation is strong and the fixes are fast. The Semrush scan of the Nashville location (230 Great Circle Rd) found the business name listed correctly everywhere it appears &mdash; the good news &mdash; but <strong style="color:rgba(255,200,100,1)">not one of the ~25 directories is fully clean.</strong> Across the live listings three different phone numbers show up &mdash; 615-617-6470, 615-857-3008 and 931-616-3946 &mdash; so Google can&rsquo;t tell which is real, and 12 directories (Bing, EZlocal, TripAdvisor and nine more) don&rsquo;t list ReNew at all. To Google, conflicting name-address-phone data is a trust problem: it suppresses local-pack rankings for exactly the commercial searches ReNew wants to win across Nashville and the priority counties.
     </p>
     <!-- /EDIT -->
   </div>
@@ -1181,7 +1185,7 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
         <ul>
           <li>Map every commercial-solar keyword to a dedicated page with quote-focused CTAs</li>
           <li>2&ndash;3 content pieces/month: commercial solar, energy hedging, tax-credit urgency, manufacturing solar</li>
-          <li>Fix the NAP everywhere: correct the San&nbsp;Antonio phone, claim 20+ missing directories, remove wrong-business listings</li>
+          <li>Fix the NAP everywhere: consolidate to one phone number, claim 12 missing directories, standardize the address format</li>
           <li>GBP claim &amp; optimization for Knoxville + Nashville service areas</li>
           <li>Review-generation program to build verified Google reviews from completed installs</li>
           <li>FAQ/AEO schema so ReNew appears in AI Overviews for &ldquo;commercial solar tennessee&rdquo; queries</li>
@@ -1272,7 +1276,7 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
         </div>
         <div>
           <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">2. Local strength is leaking through broken citations</div>
-          <div style="font-size:0.82rem;color:var(--text)">ReNew ranks #1 for its brand and sits in the local pack &mdash; but only 2 of ~25 directories are correct, with a Texas phone and wrong businesses on file. Cleaning that up is fast, high-impact, and included.</div>
+          <div style="font-size:0.82rem;color:var(--text)">ReNew ranks #1 for its brand and sits in the local pack &mdash; but across its Nashville listings three different phone numbers appear and 12 directories don&rsquo;t list it at all. Cleaning that up is fast, high-impact, and included.</div>
         </div>
         <div>
           <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">3. The site is sound &mdash; it just needs aiming</div>
@@ -1292,8 +1296,8 @@ table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maro
           <div><strong>631/mo &rarr; 1,500+/mo</strong></div>
           <div><span style="color:var(--muted)">Domain Rating:</span></div>
           <div><strong>7 &rarr; 15+</strong></div>
-          <div><span style="color:var(--muted)">Correct Listings:</span></div>
-          <div><strong>2 &rarr; 25+</strong></div>
+          <div><span style="color:var(--muted)">Consistent Listings:</span></div>
+          <div><strong>0 &rarr; 25</strong></div>
         </div>
       </div>
       <!-- /EDIT -->
